@@ -1,0 +1,27 @@
+{
+  "name": "mahkali/yii2-bsnvalidator",
+  "description": "BSN validator for Yii Framework 2.0",
+  "keywords": [
+    "yii",
+    "yii2",
+    "extension",
+    "bsn",
+    "validator",
+    "input",
+    "form"
+  ],
+  "homepage": "https://github.com/mahkali/yii2-bsnvalidator",
+  "type": "yii2-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Martinus van Middelaar",
+      "email": "mahkali@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "mahkali\\validators\\": "src"
+    }
+  },
+}
