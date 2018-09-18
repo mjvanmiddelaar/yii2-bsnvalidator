@@ -31,7 +31,7 @@ use mahkali\validators\BsnValidator;
 // use the validator in your model rules
 public function rules() {
     return [
-       	[['bsn', BsnValidator::class],
+       	['bsn', BsnValidator::class],
     ];
 }
 ```
