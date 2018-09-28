@@ -4,6 +4,14 @@ namespace mahkali\validators;
 
 use yii\validators\Validator;
 
+/**
+ * BsnValidator validates that the attribute value is a valid BSN number
+ *
+ * @see https://nl.wikipedia.org/wiki/Burgerservicenummer#11-proef
+ *
+ * @package mahkali\validators
+ * @author Martinus van Middelaar <mahkali@gmail.com>
+ */
 class BsnValidator extends Validator
 {
 
@@ -39,6 +47,33 @@ class BsnValidator extends Validator
         }
         return ($total % 11) === 0;
     }
+
+
+    public function clientValidateAttribute($model, $attribute, $view)
+    {
+        BsnValidatorAsset::register($view);
+        $options = $this->getClientOptions($model, $attribute);
+
+        return 'mahkali.bsnvalidation.bsn(value, messages, ' . json_encode($options, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . ');';
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getClientOptions($model, $attribute)
+    {
+        $options = [
+            'message' => $this->formatMessage($this->message, [
+                'attribute' => $model->getAttributeLabel($attribute),
+            ]),
+        ];
+        if ($this->skipOnEmpty) {
+            $options['skipOnEmpty'] = 1;
+        }
+
+        return $options;
+    }
+
 
 
 }
