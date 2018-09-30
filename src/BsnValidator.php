@@ -31,7 +31,7 @@ class BsnValidator extends Validator
                 'basePath' =>  '@vendor/mahkali/yii2-bsnvalidator/src/messages',
             ];
 
-            $this->message = \Yii::t('bsnvalidator', '{attribute} must be a valid BSN number.');
+            $this->message = \Yii::t('bsnvalidator', 'The supplied BSN is not a valid BSN number');
         }
     }
 

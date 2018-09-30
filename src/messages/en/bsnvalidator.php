@@ -17,5 +17,5 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    '{attribute} must be a valid BSN number.' => '',
+    'The supplied BSN is not a valid BSN number' => '',
 ];

@@ -17,5 +17,5 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    '{attribute} must be a valid BSN number.' => '{attribute} moet een geldig BSN nummer zijn.',
+    'The supplied BSN is not a valid BSN number' => 'Het door u opgegeven BSN is geen geldig BSN nummer',
 ];
