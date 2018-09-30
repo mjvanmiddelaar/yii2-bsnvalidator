@@ -1,5 +1,6 @@
 yii2-bsnvalidator
 =============
+[![Latest Stable Version](https://poser.pugx.org/mahkali/yii2-bsnvalidator/v/stable)](https://packagist.org/packages/mahkali/yii2-bsnvalidator) [![Total Downloads](https://poser.pugx.org/mahkali/yii2-bsnvalidator/downloads)](https://packagist.org/packages/mahkali/yii2-bsnvalidator) [![Latest Unstable Version](https://poser.pugx.org/mahkali/yii2-bsnvalidator/v/unstable)](https://packagist.org/packages/mahkali/yii2-bsnvalidator) [![License](https://poser.pugx.org/mahkali/yii2-bsnvalidator/license)](https://packagist.org/packages/mahkali/yii2-bsnvalidator)
 
 This extension provides BSN (Burger Service Nummer) validation for Yii Framework 2.0.
 
