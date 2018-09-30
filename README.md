@@ -23,19 +23,40 @@ to the ```require``` section of your `composer.json` file.
 
 ## Usage
 
-### BsnValidator
 ```php
 // add this in your model
 use mahkali\validators\BsnValidator;
 
 // use the validator in your model rules
-public function rules() {
+public function rules() 
+{
     return [
        	['bsn', BsnValidator::class],
     ];
 }
 ```
 
+## Translations
+
+You could set the message attribute. Or - add your language to the package:
+
+Edit:
+
+`@vendor/mahkali/yii2-bsnvalidator/src/messages/config.php`
+
+Add your language.
+
+Run:
+
+```bash
+./yii message @vendor/mahkali/yii2-bsnvalidator/src/messages/config.php
+```
+
+Edit your message file in
+
+`@vendor/mahkali/yii2-bsnvalidator/src/messages/xx/bsnvalidator.php`
+
+And make a PR :) Thank you very much.
 
 ## License
 
